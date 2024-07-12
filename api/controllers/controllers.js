@@ -3,7 +3,7 @@ const {contract}=require('../contract/contract')
 const createTask=async(req,res)=>{
     const {taskDate}=req.body; 
     const task = await dateclashCheck(taskDate);
-    try{
+    try{ 
         if(task!=="No Task Found"){
             res.status(409).json({status:409,message:"Date clash:Task cannot be added"})
         }else{
