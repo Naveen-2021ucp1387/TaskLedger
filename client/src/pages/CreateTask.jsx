@@ -1,6 +1,6 @@
 import {useState} from "react";
 import Navigation from "../components/Navigation";
-
+ 
 const CreateTask =({state})=>{
 
     const [modalOpen, setModalOpen] = useState(false);
